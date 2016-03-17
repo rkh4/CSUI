@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSUI | Password Reset</title>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="activationScript.js"></script>
+        
+        <!--Top Bar Items-->
+		<div id="topBar"></div>
+		<img id="logo" src="whiteSwitchIcon.png" alt="switch_logo_orange_white">
+		<p id="csText">Customer Services</p>
+		<p id="signedIn">rhys.howard@egress.com</p>
+        
+        <!--Progress Bar-->
+		<!--<div id="progressBar"><div id="pb"></div></div>-->
+        
+        <!--version number-->
+        <div id=version>v1.6.05</div>
+        
+        <!--Side bar icon-->
+		<div class="barIcon" id="sideButton">
+			<div class="barIcon bar" id="bar1"></div>
+			<div class="barIcon bar" id="bar2"></div>
+			<div class="barIcon bar" id="bar3"></div>
+		</div>    
+    </head>
+    
+    <body class="activation">
+        
+        <div class="row topRow">
+            
+            <!--The side bar-->
+            <ul class="col three" id="sideBar">
+                <li><a><div class="sideTextBox" id="home">Common Support Issues</div></a></li>
+                <li class="pwReset"><a href="index.html">
+                    <div class="sideTextBox" id="sb1">Password Reset</div></a></li>
+                <li class="accDelete"><a href="accountDeletion.html">
+                    <div class="sideTextBox" id="sb2">Account Deletion</div></a></li>
+                <li class="addin"><a href=outlookAddin.html>
+                    <div class="sideTextBox" id="sb3">Outlook Addin</div></a></li>
+                <li class="activation"><a href="activationIssues.html">
+                    <div class="sideTextBox" id="sb4">Activation Issues</div></a></li>
+            </ul>
+            
+            <!--The panel-->
+            <div class="col nine" id="panel">
+                <div id="restartButton">Restart</div>
+                
+                <!--Text items-->
+                <div class="header" id="header1">Example header 1</div>
+                <div class="header" id="header2">Example header 2</div>
+                <div class="header" id="header3">Example header 3</div>
+                <div class="mainText" id="main1">Example text 1</div>
+                <div class="mainText" id="main2">Example text 2</div>
+                <div class="mainText" id="main3">Example text 3</div>
+                
+                <!--Buttons-->
+                <div id="showScript"><i>(Show script)</i></div>
+                <div id="errorOnPage" class="activeButtons three">Error on Registration Page</div>
+                <div id="step3NotShow" class="activeButtons three">Step 3 not Showing</div>
+                <div id="codeNotReceived" class="activeButtons three">Activation Code not Received</div>
+                <div id="codeExpired" class="activeButtons three">Activation Code Expired</div>
+                <div id="codeInvalid" class="activeButtons three">Activation Code Invalid</div>
+                <div id="passwordIssue" class="activeButtons three">Password Issue</div>
+
+                <div id="back" class="buttons">Back</div>
+               
+            </div>
+        </div>
+        <!--Script section text fillers-->
+        <div class="row">
+            <div class="col three" id="invis"></div>
+            <div class="col nine" id="helpBox">
+                <div class="helpText" id="helpText1">DefaultValue1</div>
+                <div class="helpText" id="helpText2">DefaultValue2</div>
+                <div class="helpText" id="helpText3">DefaultValue3</div>
+                <div class="helpText" id="helpText4">DefaultValue4</div>
+                <div class="helpText" id="helpText5">DefaultValue5</div>
+                <div class="helpText" id="helpText6">DefaultValue6</div>
+            </div>
+        </div>
+        
+    </body>
+</html>

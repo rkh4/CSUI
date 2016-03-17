@@ -1,0 +1,359 @@
+*{box-sizing: border-box}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+    list-style-type: none;
+}
+
+/*----------------------------------------------------------------*/
+/*-------------------------TOP-BAR-ON-PAGE------------------------*/
+/*----------------------------------------------------------------*/
+/*Orange bar along top*/
+#topBar {
+    position: relative;
+	background-color:#ff6633;
+	height:50px;
+	width:100%;
+	left:0;
+	right:0;
+	top:0;
+	z-index:-1;
+}
+
+/*Switch logo in top left*/
+#logo {
+	position: absolute;
+	left:20px;
+	top:8px;
+	width:43px;
+	height:32px;
+	z-index:1;
+}
+
+/*'Customer services' text in top left*/
+#csText {
+	position:absolute;
+	font-family:helvetica, arial;
+	color: #ffffff;
+	left:80px;
+	top: -5px;
+	z-index:2;
+}
+
+/*Small Version number text*/
+#version{
+    position: absolute;
+    top:30px;
+    left:82px;
+    font-size:0.6em;
+    font-family: helvetica;
+    color:#ffffff;
+}
+
+/*Email address in top right*/
+#signedIn{
+	position:absolute;
+	font-family:helvetica;
+	color: #ffffff;
+	right:20px;
+	top: 0px;
+	z-index:2;
+}
+
+/*Progress Bar items*/
+#progressBar {
+	width: 30%;
+	height: 12px;
+	font-size:0.8em;
+	font-family:helvetica;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	background-color: #ff6633;	
+	position: absolute;
+	left: 50%;
+	top: 19px;
+	margin-left: -15%;
+	z-index:2;
+}
+/*Moving bit within the progress bar*/
+#pb{
+	height: 100%;
+	color: #ff6633;
+	text-align: right;
+	line-height: 14px;
+	width: 0;
+	background-color: #ffffff;
+}
+
+
+
+/*----------------------------------------------------------------*/
+/*-------------------------BODY-OBJECTS---------------------------*/
+/*----------------------------------------------------------------*/
+body{
+    width: 100%;
+    min-width: 280px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+}
+
+a{text-decoration: none;}
+a.current{background-color: #8DD8F8;}
+
+.row{
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+}
+.row.topRow{
+    padding-top: 20px;
+}
+.col{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    display: inline-block;
+    float: left;
+}
+.col:first-child{margin-left: 0px;}
+.col:last-child{margin-right: 0px;}
+.col.nine{width:74.25%}
+.col.three{width:24.75%;}
+.col.twelve{width:100%;}
+/*Invisible column that goes under buttons */
+#invis{background-color: #e0e0e0; height:40px;}
+
+/*Navigation bar*/
+.sideTextBox{
+    background-color:#00ADEE;
+    height: 50px;
+    line-height: 50px;
+    font-family: helvetica;
+    font-size: 1em;
+    text-align: center;
+    color: #ffffff;
+}
+.sideTextBox:hover{background-color:#8DD8F8;}
+
+/*Showing selected page in navbar*/
+body.pwReset li.pwReset,
+body.accDelete li.accDelete,
+body.addin li.addin,
+body.activation li.activation {background-color:#00ADEE;}
+body.pwReset li.pwReset div,
+body.accDelete li.accDelete div,
+body.addin li.addin div, 
+body.activation li.activation div {background-color:#8DD8F8;}
+
+/*White panel in which all content is displayed*/
+#panel{
+    background-color: #ffffff;
+    min-height: 250px;
+    box-shadow: 5px 5px 5px #b0b0b0;
+}
+
+/*"Show script" text in center of page*/
+#showScript {
+    width: 85px;
+    margin-top: 5px;
+    margin: auto;
+    text-align: center;
+    font-family: helvetica;
+    font-size:0.8em;
+    color:#00ADEE;
+    line-height: 20px;
+}
+#showScript:hover{color: #8DD8F8;}
+
+/*Restart Process button in corner*/
+#restartButton {
+    position: absolute;
+    height: 26px;
+    width: 56px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+    font-family: helvetica;
+    font-size:0.8em;
+    color:#ffffff;
+    line-height: 26px;
+    background-color: #00ADEE;
+}
+#restartButton:hover{background-color: #8DD8F8;}
+
+/*Columns for activation buttons*/
+.activeButtons{
+    height: 60px;
+    width: 28.3%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    font-family: helvetica;
+    color:#ffffff;
+    background-color: #00ADEE;  
+    border-radius: 5px;
+    line-height: 60px;
+}
+.activeButtons:hover{background-color: #8DD8F8;}
+
+
+/*Question heading text*/
+.header{
+	font-family: helvetica;
+    font-size:1.5em;
+	text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+	color:#093950;
+    border-bottom:#00ADEE dotted 1px;
+}
+/*Header question number*/
+.header qno {font-size: 0.5em;}
+
+/*Text in centre page, asking questions*/
+.mainText{
+	font-family: helvetica;
+	text-align: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+	color:#093950;
+}
+
+/*Tables*/
+table{ margin:auto; border-collapse: collapse;}
+tr{ line-height: 25px; border-bottom: #00ADEE dotted 1px;}
+
+
+/*All continue, Yes & no buttons*/
+.buttons{
+	height:60px;
+	width: 150px;
+	background-color: #00ADEE;
+	border-radius: 5px;
+	text-align: center;
+	font-family: helvetica;
+	color: #ffffff;
+	line-height: 60px;
+    margin: auto; 
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.buttons:hover{background-color:#8DD8F8;}
+
+/*Drop down box (script section panel extension)*/
+#helpBox{
+    border-top:#00ADEE dotted 1px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #b0b0b0;
+}
+/*Text within this panel*/
+.helpText{
+    font-family: helvetica;
+    text-align: left;
+    color:#093950;
+    font-size:0.8em;
+    line-height: 20px;
+    min-height: 20px;
+    width:80%;
+    margin: auto;
+    border-top:#00ADEE dotted 1px;
+}
+.helpText:first-child{border-top:none;}
+
+/*----------------------------------------------------------------*/
+/*---------------------@MEDIA-SETTINGS----------------------------*/
+/*----------------------------------------------------------------*/
+/*Fixing max width static object bug*/
+@media(min-width:1800px){
+    #logo{
+        left:50%;
+        margin-left: -940px;
+    }
+    #csText{
+        left:50%;
+        margin-left: -880px;
+    }
+    #signedIn{
+        right:50%;
+        margin-right: -940px;
+    }
+}
+
+@media(max-width: 1000px){
+    .activeButtons{
+        width: 42.5% !important;
+        margin: 5px 2.5% 5px 2.5%;;
+    }
+}
+
+/*Ensures that Side menu comes back on enlargement of screen*/
+@media(min-width:651px ){
+    #sideBar{display: block !important;}
+}
+
+/*Media settings for mobile devices*/
+@media (max-width: 650px){
+    .col{
+        width:100% !important;
+        margin: 0px 0px 10px 0px;
+    }
+    .col:last-child{margin-bottom: 0px;}
+    
+    .activeButtons{
+        width: 95% !important;
+        margin: 5px 2.5% 5px 2.5%;;
+    }
+    
+    #csText{display: none;}
+    #signedIn{display: none;}
+    #invis{display: none;}
+    #helpBox{margin-top:0px;}
+    #sideBar{display: none;}
+    #version{display:none;}
+    #restartButton{display: none;}
+    #progressBar{width:50%; margin-left:-25%}
+        
+    /*Button to slide out side bar*/
+    #sideButton{
+        position:absolute;
+        background-color:#ff6633;
+        top:7px;
+        right:6px;
+        height:36px;
+        width:36px;
+        z-index:0;
+        border-radius:5px;
+        border-width:3px;
+        border: 1px solid #ff6633;
+        z-index:2;
+    }
+    /*Objects within the side bar button*/
+    .bar{
+        background-color:#ffffff;
+        height: 4px;
+        width: 25px;
+        z-index: 1;
+        margin:auto;
+        margin-top:5px;
+        border-radius:5px;
+    }
+    #bar1{
+        margin-top: 6px;
+    }
+    /*Mouse over events for above button*/
+    #sideButton:hover{background-color:#ffffff;}
+    #sideButton:hover > .bar {background-color:#ff6633;}
+}
